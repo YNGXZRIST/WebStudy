@@ -354,11 +354,11 @@ function getNewArr(array $arr, int $i = 0, array &$resArr = []): array
 echo '<pre>';
 print_r(getNewArr([10, 24, 39, 45, 49]));
 echo '</pre>';
-echo chr(65);
-function getNewAssociativeArr(int $i = 65, int $j = 1, array &$resArr = [[]]): array
+
+function getNewAssociativeArr(int $i = 97, int $j = 0, array &$resArr = [[]]): array
 {
     if ($i <= 122) {
-        $resArr[chr($i)] = [$j];
+        $resArr[chr($i)] = [$j+1];
         $i++;
         $j++;
         return getNewAssociativeArr($i, $j, $resArr);
