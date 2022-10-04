@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Объявления</title>
+</head>
+<body>
+<h1>Газета "Ярмарка"</h1>
+<h2>Подать объявление</h2>
+<form method="post" action="addAdvertise.php">
+	<div>
+		<label for="title">Заголовок </label>
+		<input type="text" name="title" required id="title">
+	</div>
+	<div>
+		<label for="description">Описание</label>
+		<input type="text" name="description" required id="description">
+	</div>
+	<div>
+		<label for="category">Категория</label>
+		<input type="text" name="category" required id="category">
+	</div>
+	<div>
+		<label for="email">электронная почта</label>
+		<input type="email" name="email" required id="email">
+	</div>
 
+	<button type="submit">Отправить</button>
+</form>
+</body>
+<a href="getAdvertise.php">Список объявлений</a>
+
+</html>

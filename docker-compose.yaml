@@ -10,7 +10,7 @@ services:
     links:
       - php
   php:
-    image: php:7-fpm
+    image: xzrist/php-fpm-7.4
     volumes:
       - ./code:/code
     depends_on:
