@@ -1,6 +1,7 @@
 <?php
 
 namespace helpers;
+
 use PDO;
 use PDOException;
 

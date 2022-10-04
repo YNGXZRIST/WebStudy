@@ -1,8 +1,8 @@
 <?php
+
 function renderTemplate(string $path, array $templateData = []): string
 {
-    if (!file_exists($path))
-    {
+    if (!file_exists($path)) {
         return " renderTemplate file is not exist : " . $path;
     }
 
@@ -11,6 +11,7 @@ function renderTemplate(string $path, array $templateData = []): string
     include $path;
     return ob_get_clean();
 }
+
 function renderLayout(string $content, array $templateData = []): void
 {
     $data = array_merge($templateData, [

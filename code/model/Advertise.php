@@ -5,7 +5,6 @@ namespace model;
 use helpers\Database;
 use Throwable;
 
-
 class Advertise
 {
     private $email;
@@ -22,22 +21,27 @@ class Advertise
         $this->category = $category;
         $this->time = date('Y-m-d H:i:s');
     }
+
     public function getEmail()
     {
         return $this->email;
     }
+
     public function getTitle()
     {
         return $this->title;
     }
+
     public function getDescription()
     {
         return $this->description;
     }
+
     public function getCategory()
     {
         return $this->category;
     }
+
     public function getTime()
     {
         return $this->time;

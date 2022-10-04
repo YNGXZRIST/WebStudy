@@ -1,10 +1,8 @@
 <?php
 
-use model\Advertise;
-
 include_once $_SERVER['DOCUMENT_ROOT'] . '/function/service/' . 'AdService.php';
 
-$advService=new \service\AdService();
+$advService = new \service\AdService();
 $res = $advService->getAdvertiseList();
 if (!$res) {
     echo 'Объявлений нет';

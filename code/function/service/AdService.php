@@ -5,15 +5,15 @@ namespace service;
 use helpers\Database;
 use model\Advertise;
 use PDO;
+use Throwable;
 
 include_once $_SERVER['DOCUMENT_ROOT'] . '/helpers/' . 'Database.php';
 
 class AdService
 {
-// function get Advertise
+    // function get Advertise
     public function getAdvertiseList()
     {
-
         $conn = Database::getConnection();
         $stmt = $conn->prepare("SELECT ad.email,ad.title,ad.description,ad.category,ad.created FROM ad");
         $stmt->execute();
