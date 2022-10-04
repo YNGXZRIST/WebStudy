@@ -47,3 +47,4 @@ class Advertise
         return $this->time;
     }
 }
+

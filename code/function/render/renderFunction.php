@@ -21,3 +21,4 @@ function renderLayout(string $content, array $templateData = []): void
 
     echo $result;
 }
+

@@ -40,3 +40,4 @@ class AdService
         return 'Запись успешно добавлена';
     }
 }
+

@@ -25,3 +25,4 @@ foreach ($res as $adv) {
     echo "<td>{$adv['created']}</td>";
     echo '</tr>';
 }
+

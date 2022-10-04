@@ -16,3 +16,4 @@ $advert = new Advertise($email, $title, $description, $category);
 $adService = new AdService();
 $res = $adService->addAdvertise($advert);
 print $res;
+
