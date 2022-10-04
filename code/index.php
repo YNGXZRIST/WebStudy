@@ -1,5 +1,7 @@
 <?php
+require_once "./function/render/renderFunction.php";
+require_once __DIR__ . '/vendor/autoload.php';
 
-include_once $_SERVER['DOCUMENT_ROOT'].'/classes/'.'Advertise.php';
-include_once $_SERVER['DOCUMENT_ROOT'].'/classes/'.'Database.php';
-phpinfo();
+$template = renderTemplate("./view/index.html"
+);
+renderLayout($template);
